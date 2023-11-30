@@ -6,7 +6,7 @@ function generateInfo(event) {
   new Typewriter("#info", {
     strings: "Information will be here",
     autoStart: true,
-    delay: 1,
+    delay: 75,
     cursor: "",
   });
 }
