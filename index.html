@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Generator</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to AI Generator</h1>
+      <h1>Where are you going? ✈️</h1>
     </header>
     <main>
-      <form id="ai-generator">
-        <input
-          type="text"
-          placeholder="Enter the city..."
-          autofocus
-          required
-          autocomplete="off"
-          id="user-instructions"
-        />
-        <input type="submit" />
-      </form>
+      <div class="form-container">
+        <form id="ai-generator">
+          <input
+            type="text"
+            placeholder="Enter the city..."
+            autofocus
+            required
+            autocomplete="off"
+            id="user-instructions"
+            class="instructions"
+          />
+          <input type="submit" value="Go City" class="btn" />
+        </form>
+        <div class="hint">i.e: London, Paris, New York..</div>
+      </div>
+
       <div class="info" id="info"></div>
     </main>
     <footer>
